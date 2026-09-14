@@ -1,0 +1,27 @@
+# Phoenix Auto-Updater
+> Standalone tool that keeps local Phoenix installations updated from GitHub.
+
+## Project Structure
+- Core: `phoenix_auto_updater.py` (main updater logic)
+- Launcher: `run_updater.bat` (Windows double-click)
+- Config: Reads `config.json` if present (repo_url, branch, check_interval, stable_window, log_file)
+
+## Key Features
+- Checks for updates every 5 minutes (configurable)
+- Waits for 5 minutes of stable internet before updating
+- Uses bare git mirror (minimal space, no conflicts)
+- Preserves user config/notes/data — only updates code
+- Notifies when update applied — restart Phoenix to use new version
+- Runs in background, can auto-start at Windows login
+- Zero dependencies beyond Python standard library + git
+
+## Usage Terms
+- Free for personal use
+- Commercial use requires permission
+- Attribution required: "Phoenix Auto-Updater by DARKPHOENIX2530"
+- License: MIT
+
+## Links
+- Repository: https://github.com/DARKPHOENIX2530/phoenix-auto-updater
+- Phoenix Assistant: https://github.com/DARKPHOENIX2530/phoenix-assistant
+- Raw README: https://raw.githubusercontent.com/DARKPHOENIX2530/phoenix-auto-updater/main/README.md
